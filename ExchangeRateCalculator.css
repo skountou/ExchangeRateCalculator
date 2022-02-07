@@ -1,0 +1,90 @@
+:root {
+    --primary-color: #5fbaa7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+p {
+    text-align: center;
+}
+
+.btn {
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px 10px;
+}
+
+img {
+    width: 250px;
+}
+
+.currency {
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currency select {
+    padding: 10px 20px 10px 10px;
+    margin-right: 5px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #dedede;
+    font-size: 16px;
+    background: transparent;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e4/Ic_arrow_drop_down_36px.svg');
+    background-repeat: no-repeat;
+    background-position:right -5px top 50%;
+}
+
+input {
+    border: 0;
+    background: transparent;
+    font-size: 24px;
+    text-align: right;
+}
+
+.swap-rate-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate {
+    color: var(--primary-color);
+    font-size: 14px;
+    padding: 0px 10px;
+}
+
+select:focus, input:focus, button:focus {
+    outline:0;
+}
+
+@media(max-width: 600px) {
+    .currency input {
+        width: 200px;
+    }
+}
+
